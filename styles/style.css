@@ -155,6 +155,7 @@ ol {
 }
 
 .content__list {
+  position: relative;
   overflow-y: scroll;
   height: 300px;
 }
@@ -195,7 +196,6 @@ ol {
   outline: 1px solid #FFF;
   outline-offset: 3px;
 }
-
 .content__video-card-title {
   font-style: normal;
   font-weight: 700;
