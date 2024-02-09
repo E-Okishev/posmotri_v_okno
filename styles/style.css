@@ -12,7 +12,7 @@ html {
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
-  color: #fff;
+  color: #FFF;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
@@ -62,7 +62,7 @@ ol {
 .search-form {
   display: grid;
   align-items: end;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 222px 1fr;
   gap: 40px;
   margin-top: 16px;
 }
@@ -91,10 +91,20 @@ ol {
 }
 
 .search-form__textfield {
-  color: #fff;
+  border-top: 1px solid #FFF;
+  border-right: none;
+  border-bottom: 1px solid #FFF;
+  border-left: none;
+  padding: 2px 0;
+  color: #FFF;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
-  appearance: none;
+  background-color: transparent;
+  inline-size: 225px;
+}
+
+.search-form__textfield::placeholder {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .search-form__textfield:focus-visible {
@@ -107,7 +117,6 @@ ol {
 
 .search-form__label .search-form__pseudo-checkbox {
   display: inline-block;
-  margin-right: 5px;
   vertical-align: middle;
 }
 
@@ -139,6 +148,7 @@ ol {
 }
 
 .title {
+  font-family: Oswald, sans-serif;
   margin-bottom: 26px;
   font-weight: 700;
   font-size: 75px;
@@ -164,15 +174,34 @@ ol {
   margin-bottom: 0;
 }
 
+.content__list-item:hover {
+  text-decoration: underline;
+}
+
+.content__list-item:active {
+  background-color: #545050;
+}
+
+.content__list-item:focus {
+  outline: none;
+}
+
+.content__list-item:focus-visible {
+  outline: 1px solid #FFF;
+  outline-offset: 3px;
+}
+
 .content__card-link {
   text-decoration: none;
-  color: #fff;
+  color: #FFF;
+  margin: 2px;
 }
 
 .content__video-card {
   display: grid;
   justify-content: space-between;
   grid-template-columns: 1fr max-content;
+  padding: 3px;
 }
 
 .content__video-card-title {
@@ -205,9 +234,9 @@ ol {
 }
 
 .button {
-  border: 1px solid #ffffff;
+  border: 1px solid #FFFFFF;
   background-color: transparent;
-  color: #fff;
+  color: #FFF;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -231,6 +260,6 @@ ol {
 }
 
 .button:focus-visible {
-  outline: 1px solid #fff;
+  outline: 1px solid #FFF;
   outline-offset: 1px;
 }
