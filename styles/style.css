@@ -39,8 +39,6 @@ ol {
 
 .content {
   padding: 133px 30px;
-  height: 100vh;
-  max-height: 800px;
   display: grid;
   align-items: end;
   grid-template-columns: 711px 399px;
