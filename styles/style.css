@@ -155,7 +155,6 @@ ol {
 }
 
 .content__list {
-  position: relative;
   overflow-y: scroll;
   height: 300px;
 }
@@ -168,27 +167,13 @@ ol {
   margin-bottom: 0;
 }
 
-.content__list-item:hover {
-  text-decoration: underline;
-}
-
-.content__list-item:active {
-  background-color: #545050;
-}
-
 .content__list-item:focus {
   outline: none;
-}
-
-.content__list-item:focus-visible {
-  outline: 1px solid #FFF;
-  outline-offset: 3px;
 }
 
 .content__card-link {
   text-decoration: none;
   color: #FFF;
-  margin: 2px;
 }
 
 .content__video-card {
@@ -196,6 +181,19 @@ ol {
   justify-content: space-between;
   grid-template-columns: 1fr max-content;
   padding: 3px;
+}
+
+.content__video-card:active {
+  background-color: #545050;
+}
+
+.content__video-card:hover {
+  text-decoration: underline;
+}
+
+.content__video-card:focus-visible {
+  outline: 1px solid #FFF;
+  outline-offset: 3px;
 }
 
 .content__video-card-title {
