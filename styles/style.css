@@ -38,12 +38,11 @@ ol {
 }
 
 .content {
-  padding: 133px 30px;
+  margin: 133px 30px;
   display: grid;
   align-items: end;
   grid-template-columns: 711px 399px;
   gap: 30px;
-  height: 100vh;
 }
 
 .result {
